@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282b30;
+  padding-top: 20px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Search {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.Search__input {
+  width: 70%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.329);
+  border: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: rgba(199, 199, 199, 0.5);
+  font-size: 20px;
+}
+
+.Search__btn {
+  width: 30%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.Weather {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.border {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #00000049;
+  color: #fff;
+}
+
+.Weather__title {
+  line-height: 0.3;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* main */
+.Main {
+  width: 48%;
+  display: inline-block;
+  max-height: 300px;
+}
+
+.Main__img {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.Main__info {
+  display: inline-block;
+  margin-top: 34px;
+  text-align: left;
+}
+
+.Main__temperature {
+  display: inline-block;
+  vertical-align: top;
+  height: 300px;
+  width: 30%;
+  height: 300px;
+}
+
+/* Forecast */
+.Forecast {
+  width: 50%;
+  margin-left: 2%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.Forecast__box {
+  width: 20%;
+  display: inline-block;
+}
