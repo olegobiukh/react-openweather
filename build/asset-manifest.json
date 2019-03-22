@@ -1,0 +1,14 @@
+{
+  "main.css": "/react-openweather/build/static/css/main.ad650cc2.chunk.css",
+  "main.js": "/react-openweather/build/static/js/main.0c8c78be.chunk.js",
+  "main.js.map": "/react-openweather/build/static/js/main.0c8c78be.chunk.js.map",
+  "runtime~main.js": "/react-openweather/build/static/js/runtime~main.e4fa1d4c.js",
+  "runtime~main.js.map": "/react-openweather/build/static/js/runtime~main.e4fa1d4c.js.map",
+  "static/js/2.b934461c.chunk.js": "/react-openweather/build/static/js/2.b934461c.chunk.js",
+  "static/js/2.b934461c.chunk.js.map": "/react-openweather/build/static/js/2.b934461c.chunk.js.map",
+  "index.html": "/react-openweather/build/index.html",
+  "precache-manifest.854df3334df5793ba4b8871a806d3081.js": "/react-openweather/build/precache-manifest.854df3334df5793ba4b8871a806d3081.js",
+  "service-worker.js": "/react-openweather/build/service-worker.js",
+  "static/css/main.ad650cc2.chunk.css.map": "/react-openweather/build/static/css/main.ad650cc2.chunk.css.map",
+  "static/media/logo.svg": "/react-openweather/build/static/media/logo.5d5d9eef.svg"
+}
