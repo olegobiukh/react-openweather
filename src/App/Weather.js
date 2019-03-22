@@ -8,7 +8,8 @@ class Weather extends React.Component {
   state = {
     city: "",
     data: null,
-    forecast: null
+    forecast: null,
+    error: true
   };
   componentDidMount() {
     this.loadData();
@@ -20,6 +21,8 @@ class Weather extends React.Component {
 
   async loadData() {
     const { city } = this.props.match.params;
+    let error = false;
+
     if (city === this.state.city) {
       return;
     }
@@ -27,15 +30,20 @@ class Weather extends React.Component {
     const data = await getByCity(city);
     const forecast = await getForecastByCity(city);
 
+    if (!data) {
+      error = true;
+    }
+
     this.setState({
       city,
       data,
-      forecast
+      forecast,
+      error
     });
   }
 
   render() {
-    const { data, forecast } = this.state;
+    const { data, forecast, error } = this.state;
     if (data) {
       return (
         <div className="Weather">
@@ -46,6 +54,8 @@ class Weather extends React.Component {
           <Forecast forecast={forecast} />
         </div>
       );
+    } else if (error) {
+      return <h2>Sorry, there is no such city</h2>;
     } else {
       return <h2>Loading</h2>;
     }

@@ -18,12 +18,6 @@ class App extends React.Component {
     history.push(cityname.toLowerCase());
   };
 
-  // onInputChange = event => {
-  //   this.setState({
-  //     cityname: event.target.value
-  //   });
-  // };
-
   render() {
     const { cityName } = this.state;
 

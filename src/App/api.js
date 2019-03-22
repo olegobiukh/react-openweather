@@ -5,6 +5,9 @@ export const getByCity = async (city = "") => {
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`
   );
   const data = await response.json();
+  if (data.cod === "404") {
+    return null;
+  }
   return data;
 };
 

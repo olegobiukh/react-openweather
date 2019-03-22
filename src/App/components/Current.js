@@ -6,17 +6,15 @@ const Current = ({ data }) => {
       {data && (
         <div className="Main border">
           <div className="Main__weather">
-            <div
-              style={{
-                backgroundImage: `url(
-                  http://openweathermap.org/img/w/${data.weather[0].icon}.png
-                )`
-              }}
+            <img
+              src={`http://openweathermap.org/img/w/${
+                data.weather[0].icon
+              }.png`}
               className="Main__img"
               alt={data.weather[0].description}
             />
             <div className="Main__temperature">
-              <h1>{data.main.temp} F</h1>
+              <h1>{Math.round(data.main.temp)}&#176;F</h1>
 
               <div className="Main__info">
                 <h2>More info:</h2>

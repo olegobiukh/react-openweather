@@ -2,9 +2,16 @@
   box-sizing: border-box;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 body {
   background-color: #282b30;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .App {
@@ -59,27 +66,32 @@ body {
 
 /* main */
 .Main {
+  position: relative;
   width: 48%;
   display: inline-block;
-  max-height: 300px;
+  padding-right: 55px;
+  max-height: 320px;
 }
 
 .Main__img {
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  z-index: -1;
 }
 
 .Main__info {
   display: inline-block;
-  margin-top: 34px;
+  margin-top: 26px;
   text-align: left;
 }
 
 .Main__temperature {
-  display: inline-block;
+  float: right;
   vertical-align: top;
   height: 300px;
   width: 30%;
@@ -97,4 +109,25 @@ body {
 .Forecast__box {
   width: 20%;
   display: inline-block;
+}
+
+@media screen and (max-width: 630px) {
+  .Main {
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .Main,
+  .Forecast {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .Search {
+    width: 90%;
+  }
 }
