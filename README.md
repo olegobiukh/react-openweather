@@ -4,5 +4,3 @@
 
 [Code](https://github.com/olegobiukh/react-openweather/tree/dev)
 
----
-[CodeSandBox](https://codesandbox.io/s/ywr6nwnrn9)
