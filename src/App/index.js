@@ -24,11 +24,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="Catalog">
-          <Search
-            cityname={cityName}
-            onInputChange={this.onInputChange}
-            getweather={this.getweather}
-          />
+          <Search cityname={cityName} getweather={this.getweather} />
           <Route exact path="/:city" component={Weather} />
         </div>
       </div>
