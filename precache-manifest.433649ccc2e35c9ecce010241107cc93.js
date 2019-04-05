@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/react-openweather/static/js/runtime~main.caeba0f7.js"
   },
   {
-    "revision": "34b59c8070fe674adb66",
-    "url": "/react-openweather/static/js/main.650bbfe2.chunk.js"
+    "revision": "4ce4891548ec08c49a7d",
+    "url": "/react-openweather/static/js/main.7a8b22d4.chunk.js"
   },
   {
     "revision": "5ad88ef7a04a51fe1b6c",
     "url": "/react-openweather/static/js/2.c4852e0e.chunk.js"
   },
   {
-    "revision": "34b59c8070fe674adb66",
+    "revision": "4ce4891548ec08c49a7d",
     "url": "/react-openweather/static/css/main.1a139631.chunk.css"
   },
   {
-    "revision": "5c170fd9eddfed1abcdc748efbb70105",
+    "revision": "a1afa081ed81db6313c8ab0555131112",
     "url": "/react-openweather/index.html"
   }
 ];
