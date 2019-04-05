@@ -20,7 +20,7 @@ const Forecast = ({ isLoaded, forecast }) => {
                   }.png`}
                   alt={forecast.list[weekDay].weather[0].description}
                 />
-                <p>{Math.round(forecast.list[weekDay].main.temp)} F</p>
+                <p>{Math.round(forecast.list[weekDay].main.temp)}&#176;C</p>
               </div>
             );
           })}

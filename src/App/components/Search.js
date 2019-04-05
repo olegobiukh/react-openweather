@@ -1,8 +1,8 @@
 import React from "react";
 
-const Search = ({ cityName, getweather }) => {
+const Search = ({ cityName, getweather, getCityName }) => {
   return (
-    <from class="Search" onClick={getweather}>
+    <form class="Search" onSubmit={getweather}>
       <input
         className="Search__input"
         placeholder="Enter your city"
@@ -10,10 +10,11 @@ const Search = ({ cityName, getweather }) => {
         name="cityname"
         id="cityname"
         value={cityName}
+        onChange={getCityName}
         autoComplete="off"
       />
       <button className="Search__btn">Get Weather</button>
-    </from>
+    </form>
   );
 };
 

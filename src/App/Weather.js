@@ -54,11 +54,13 @@ class Weather extends React.Component {
           <Forecast forecast={forecast} />
         </div>
       );
-    } else if (error) {
-      return <h2>Sorry, there is no such city</h2>;
-    } else {
-      return <h2>Loading</h2>;
     }
+
+    if (error) {
+      return <h2>Sorry, there is no such city</h2>;
+    }
+
+    return <h2>Loading</h2>;
   }
 }
 

@@ -11,11 +11,16 @@ class App extends React.Component {
     cityname: ""
   };
 
-  getweather = () => {
+  getweather = event => {
+    event.preventDefault();
     const cityname = document.getElementById("cityname").value;
 
     const { history } = this.props;
     history.push(cityname.toLowerCase());
+  };
+
+  getCityName = city => {
+    this.setState({ cityname: city });
   };
 
   render() {

@@ -14,7 +14,7 @@ const Current = ({ data }) => {
               alt={data.weather[0].description}
             />
             <div className="Main__temperature">
-              <h1>{Math.round(data.main.temp)}&#176;F</h1>
+              <h1>{Math.round(data.main.temp)}&#176;C</h1>
 
               <div className="Main__info">
                 <h2>More info:</h2>
