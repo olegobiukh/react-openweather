@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = ({ cityName, getweather, getCityName }) => {
   return (
-    <form class="Search" onSubmit={getweather}>
+    <form className="Search" onSubmit={getweather}>
       <input
         className="Search__input"
         placeholder="Enter your city"

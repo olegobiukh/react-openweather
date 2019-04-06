@@ -18,9 +18,9 @@ const Current = ({ data }) => {
 
               <div className="Main__info">
                 <h2>More info:</h2>
-                <p>"Speed":{data.wind.speed}</p>
-                <p>"Humidity":{data.main.humidity}</p>
-                <p>"Pressure"{data.main.pressure}</p>
+                <p>"Speed": {data.wind.speed}</p>
+                <p>"Humidity": {data.main.humidity}</p>
+                <p>"Pressure": {data.main.pressure}</p>
               </div>
             </div>
           </div>

@@ -46,6 +46,10 @@ body {
   vertical-align: top;
 }
 
+.Search__btn:hover {
+  background-color: #6f6b6b;
+}
+
 .Weather {
   width: 90%;
   margin: 0 auto;
@@ -86,8 +90,13 @@ body {
 
 .Main__info {
   display: inline-block;
+  width: 120px;
   margin-top: 26px;
   text-align: left;
+}
+
+.Main__info p {
+  display: block;
 }
 
 .Main__temperature {
